@@ -74,4 +74,24 @@ body {
     text-decoration: underline;
   }
 
+  .sidebar-toggle-small {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #4f8ef7;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .sidebar-toggle-small:hover {
+    background-color: #3a6cd4;
+  }
+  
+
   
