@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+    display: flex;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .sidebar {
+    width: 300px;
+    background: linear-gradient(135deg, #000310, #02206b);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-sizing: border-box;
   }
-}
+  
+  .profile-pic {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-list li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f0f1f5; 
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .menu-list li:hover {
+    background-color: #dfe1e6; 
+  }
+  
+  .menu-list li.active {
+    background-color: #4f8ef7; 
+    color: #ffffff; 
+  }
+  
+  .content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #000310, #02206b); /* พื้นหลังแบบไล่เฉดสีสำหรับเนื้อหา */
+    overflow-y: auto;
+  }
+  
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #4f8ef7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
